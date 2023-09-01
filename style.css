@@ -1,0 +1,468 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+hr{
+    border: 5px dotted white;
+    border-bottom: none;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: block;
+} 
+[class*="col-"]{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+/* design for navigition start */
+header{
+    background-color: #24a19c;
+    padding: 0% 1%;
+    text-align: center;
+}
+.nav-icon{
+    width: 75px;
+    height: 75px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.menu-items li{
+    display: block;
+    list-style: none;
+    line-height: 70px;
+    padding: 0px 15px;
+}
+.menu-items li a{
+    display: block;
+    text-decoration: none;
+    color:#ffff;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.menu-items li:hover{
+    background-color: rgba(0,0,0,.3);
+    border-radius:10px ;
+    
+}
+/* design for navigition ends*/
+
+/* bannar design start */
+
+.bannar{
+   background-image: url(images/heading\ pic.jpg);
+   width: 100%;
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+.name-items{
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+.name-items h1{
+    background-color: gold;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    margin: 20px;
+    font-family: 'Kalam', cursive;
+}
+.name-items p{
+   background-color:green;
+   margin: 20px auto;
+   font-size: 1.5rem;
+   color: white;
+   width: 80%;
+   padding: 10px;
+   border-radius: 5px;
+   
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* bannar design ends */
+
+/* about design start */
+.about{
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.about h3{
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+.about p{
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* about design ends */
+/* Service design start */
+
+.service{
+    padding: 1% 0%;
+    background-color: gray;
+}
+.card-body{
+    text-align: center;
+   
+    opacity: .8;
+}
+.card-body:hover{
+    opacity: 1;
+}
+.card-body img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    background-color: gray;
+
+}
+.items-price{
+    background: rgba(165, 164,164);
+}
+.items-price h5{
+    font-size: 1.3rem;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.items-price p{
+    font: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+/* Service design ends */
+/* contact design start */
+
+.contact{
+    padding: 1%;
+    text-align: center;
+    background-color: #595b83;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.map{
+    width: 100%;
+    height: 250px;
+
+}
+.contact h5{
+    font-size: 1.5rem;
+    color: white;
+}
+.contact h6{
+    font-size: 1.3rem;
+}
+.contact::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/* contact design ends */
+/* footer design start */
+
+footer{
+    background-color:#060930;
+    padding: 1%;
+    text-align: center;
+}
+.footer-name{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .8rem;
+}
+.icon-footer{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px 10px;
+    transition: .5s;
+    text-align: center;
+}
+.icon-footer:hover{
+    transform: scale(1.3);
+    color: gray;
+}
+
+/* footer design ends */
+
+/* small size design */
+@media (min-width:500px){
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 
+    {width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-mob-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    } 
+
+
+}
+
+
+/* medium size design */
+@media (min-width:700px){
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 
+    {width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    } 
+    /* design for navigition start*/
+.logo{
+    text-align: left;
+    margin-top: 2px;
+    opacity: 1;
+}
+.logo:hover{
+    opacity: .8;
+}
+
+.menu-items{
+    text-align: right;
+    
+}
+
+.menu-items li{
+    display: inline-block;
+   
+}
+.menu-items li a{
+    display: inline-block;
+    transition: .4s;
+}
+.menu-items li:hover{
+   background-color: transparent;
+   
+}
+.menu-items li a:hover{
+    transform: scale(1.2);
+    color: rgb(21, 239, 178);
+    text-decoration: underline;
+    
+}
+
+/* design for navigition ends*/
+
+/* bannar design start */
+.bannar{
+    position: relative;
+    height: 100vh;
+}
+.name-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.name-items h1{
+    width: 700px;
+    font-size: 3rem;
+    padding: 15px;
+
+}
+.name-items p{
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 5px;
+}
+.btn{
+    font-size: 1.7rem;
+    padding: 15px;
+}
+
+/* bannar design ends */
+/* about design start */
+.about h3{
+    font-size: 2rem;
+   
+}
+.about p{
+    font-size: 1.2rem;
+}
+
+/* about design ends */
+/* contact design start */
+
+.contact{
+    height: 300px;
+}
+
+/* contact design ends */
+/* footer design start */
+
+.footer-name{
+    text-align: left;
+    font-size: 1.1rem;
+}
+.footer-icon{
+    text-align: right;
+   
+}
+.footer-name{
+    font-size: 1rem;
+}
+.footer-icon{
+   font-size: 1.6rem;
+}
+/* footer design ends */
+
+}
+
+
+/* big size design */
+@media (min-width:990px){
+    .col-bi-1 {
+        width: 8.33%;
+    }
+    .col-bi-2 {
+        width: 16.66%;
+    }
+    .col-bi-3 
+    {width: 25%;
+    }
+    .col-bi-4 {
+        width: 33.33%;
+    }
+    .col-bi-5 {
+        width: 41.66%;
+    }
+    .col-bi-6 {
+        width: 50%;
+    }
+    .col-bi-7 {
+        width: 58.33%;
+    }
+    .col-bi-8 {
+        width: 66.66%;
+    }
+    .col-bi-9 {
+        width: 75%;
+    }
+    .col-bi-10 {
+        width: 83.33%;
+    }
+    .col-bi-11 {
+        width: 91.66%;
+    }
+    .col-bi-12 {
+        width: 100%;
+    } 
+
+    /* footer design start */
+    .footer-name{
+        font-size: 1.2rem;
+    }
+    .icon-footer{
+        margin: 0px 20px;
+        font-size: 1.8rem;
+    }
+    .icon-footer:hover{
+        transform: scale(1.5);
+    }
+    /* footer design ends*/
+}
